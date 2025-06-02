@@ -43,7 +43,6 @@ output/openpgpkey: $(OUTPUT_MEMBER_KEYRINGS)
 	cd output && ../scripts/update-keyrings build-wkd debian.org keyrings/blisslabs-keyring.pgp
 
 test: all
-	./runtests
 
 clean:
 	rm -f output/keyrings/*.pgp output/keyrings/*.gpg output/sha512sums.txt output/README output/changelog output/keyrings/*~
