@@ -1,0 +1,30 @@
+Source: aaropa-keyring
+Section: misc
+Priority: optional
+Maintainer: Bùi Gia Viện <shadichy@blisslabs.org>
+Build-Depends: debhelper-compat (= 12), gnupg, gawk
+Homepage: https://keyring.debian.org/
+Standards-Version: 3.9.8
+Vcs-Browser: https://github.com/BlissOS/aaropa-keyring
+Vcs-Git: https://github.com/BlissOS/aaropa-keyring.git
+Rules-Requires-Root: no
+
+Package: aaropa-keyring
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: gnupg (>= 1.0.6-4)
+Description: OpenPGP certificates of BlissLabs Developers and Maintainers
+ The BlissLabs project wants developers to digitally sign the
+ announcements of their packages with OpenPGP, to protect against
+ forgeries.  This package contains OpenPGP keyrings of
+ BlissLabs Developers (uploading and non-uploading), as well as of BlissLabs
+ Maintainers.
+ .
+ Do note that, although this package is provided for convenience, it
+ is not necessarily kept updated with the latest changes.
+ .
+ Finally, the following Git repository is usually kept up to date with the
+ public authoritative data:
+ .
+ https://github.com/BlissOS/aaropa-keyring.git

@@ -1,0 +1,6 @@
+*.gpg
+*.pgp
+output/sha512sums.txt
+output/README
+output/changelog
+git-commit-template

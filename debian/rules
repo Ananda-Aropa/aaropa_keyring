@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_clean:
+	dh_clean
+	mkdir -p output/keyrings
+	touch --date='@$(SOURCE_DATE_EPOCH)' output output/keyrings debian
