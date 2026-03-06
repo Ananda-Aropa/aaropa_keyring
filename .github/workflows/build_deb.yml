@@ -51,6 +51,10 @@ jobs:
       - name: Check out
         uses: actions/checkout@v4
 
+      - name: Update changelog on push
+        if: github.event_name == 'push'
+        run: ./debian/setup.sh
+
       - name: Build DEB package
         uses: Ananda-Aropa/build-deb@main
         with:
